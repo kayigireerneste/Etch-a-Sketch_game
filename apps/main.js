@@ -16,7 +16,6 @@ window.onload = () => {
 function createDiv(cols, rows){
     for(let i = 0; i < (cols * rows); i++){
         const div = document.createElement(`div`)
-        div.style.border = `1px solid #266ea1`
         container.style.gridTemplateColumns = `repeat(${cols}, 1fr)`
         container.style.gridTemplateRows = `repeat(${rows}, 1fr)`
         container.appendChild(div).classList.add(`box`)
